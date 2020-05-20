@@ -16,6 +16,3 @@ Homomorphic encryption:
 
 Research:
 - [Dwork, C. (July 2006). *Differential Privacy*. 33rd International Colloquium on Automata, Languages and Programming, part II (ICALP 2006). https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf)
-
-## Data Generation for Testing
-- [Faker](https://faker.readthedocs.io/en/master/#)
