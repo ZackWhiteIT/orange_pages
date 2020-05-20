@@ -1,2 +1,2 @@
-# orange_pages
+# Orange Pages
 Python guidance
