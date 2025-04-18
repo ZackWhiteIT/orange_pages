@@ -18,16 +18,6 @@ def hanoi(n, source, target, auxiliary):
         hanoi(1, source, target, auxiliary)
         hanoi(n - 1, auxiliary, target, source)
 
-def visualize(n, source, target, auxiliary):
-    """
-    This function visualizes the Tower of Hanoi problem.
-    It prints the initial state and the steps to move the disks.
-    It also prints the rods and the disks at each step using ASCII art.
-    """
-    print(f"Initial state: {source} -> {target} with {n} disks")
-    hanoi(n, source, target, auxiliary)
-    print(f"Final state: {target} -> {source} with {n} disks")
-
 def main():
     """
     Main function to execute the Tower of Hanoi solution.
@@ -38,7 +28,7 @@ def main():
         n = int(input("Enter the number of disks: "))
     
     print(f"Steps to move {n} disks from A to C using B as auxiliary:")
-    visualize(n, 'A', 'C', 'B')
+    hanoi(n, 'A', 'C', 'B')
 
 if __name__ == "__main__":
     main()
