@@ -55,18 +55,12 @@ Earn points by solving puzzles and level up your coding skills. The goal is to r
 | 2️⃣9️⃣ Binary Search Algorithm | Efficient searching | 🔟 |
 | 3️⃣0️⃣ Conway’s Game of Life | Cellular automata | 🔟 |
 
----
-
 ### 🏅 **How to Play**
 
 1️⃣ Start with the **Beginner Level** challenges to earn **0-30 points**.  
 2️⃣ Move on to **Intermediate Level** challenges as you reach **31-70 points**.  
 3️⃣ Conquer the **Advanced Level** to reach **100 points and beyond**!  
 4️⃣ Track your progress and challenge teammates to a friendly competition.  
-
-Absolutely! Here are all **30 Python coding challenges**, grouped by their **difficulty levels** and structured for easy reference.
-
----
 
 ## 🟢 **Beginner Level (1-3 Points Each)**
 
@@ -302,10 +296,6 @@ def bubble_sort(arr):
 numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
 print("Sorted:", bubble_sort(numbers))
 ```
-
-Absolutely! Here are all the **Advanced-Level Python puzzles**, designed to challenge students with algorithmic thinking, logic, and strategic problem-solving.  
-
----
 
 ## 🔴 **Advanced-Level Puzzles (7-10 Points Each)**  
 
