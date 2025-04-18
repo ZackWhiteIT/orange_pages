@@ -151,6 +151,7 @@ Generate the first 10 numbers in the Fibonacci sequence.
 ### **1️⃣2️⃣ Tower of Hanoi** (5 Points)  
 
 The Tower of Hanoi is a mathematical puzzle where you have three rods and a number of disks of different sizes. The goal is to move all the disks from the first rod to the third rod, following these rules:
+
 1. Only one disk can be moved at a time.
 2. A disk can only be placed on top of a larger disk or an empty rod.
 
@@ -160,7 +161,11 @@ The Tower of Hanoi is a mathematical puzzle where you have three rods and a numb
 
 ### **1️⃣3️⃣ Celsius to Fahrenheit Converter** (4 Points)  
 
-Write a program that converts Celsius to Fahrenheit.  
+Write a program that converts Celsius to Fahrenheit.
+
+**Hint:** Use the formula:  
+`F = C * 1.8 + 32`
+
 [View Solution](./solutions/13_celsius_to_fahrenheit_converter.py)
 
 ---
@@ -175,6 +180,12 @@ Write a function that counts the number of vowels in a given string.
 ### **1️⃣5️⃣ Palindrome Checker** (5 Points)  
 
 Check if a word or phrase is a palindrome.  
+
+**Example:**  
+
+- `"racecar"` is a palindrome because it reads the same backward as forward.  
+- `"hello"` is not a palindrome.  
+
 [View Solution](./solutions/15_palindrome_checker.py)
 
 ---
@@ -188,7 +199,11 @@ Create a simple **Rock-Paper-Scissors** game against the computer.
 
 ### **1️⃣7️⃣ Bubble Sort Algorithm** (6 Points)  
 
-Implement the **Bubble Sort** algorithm to sort a list of numbers.  
+Implement the **Bubble Sort** algorithm to sort a list of numbers.
+
+**Explanation:**
+Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process is repeated until the list is sorted.
+
 [View Solution](./solutions/17_bubble_sort_algorithm.py)
 
 ---
@@ -213,7 +228,11 @@ Write a function to find the **first duplicate** number in a list.
 
 ### **2️⃣0️⃣ ATM Withdrawal Simulator** (7 Points)  
 
-Simulate an **ATM withdrawal** by checking balance before deducting an amount.  
+Simulate an **ATM withdrawal** by checking balance before deducting an amount.
+
+**Explanation:**
+The program should simulate an ATM where a user can withdraw money. It should check if the withdrawal amount is less than or equal to the current balance. If so, deduct the amount and display the remaining balance; otherwise, display an error message for insufficient funds.
+
 [View Solution](./solutions/20_atm_withdrawal_simulator.py)
 
 ---
@@ -228,6 +247,10 @@ Remove **duplicate numbers** from a list and return a sorted version.
 ### **2️⃣2️⃣ Password Strength Checker** (8 Points)  
 
 Check **password strength** based on length and character variety.  
+
+**Explanation:**
+A strong password typically has at least 8 characters, includes uppercase and lowercase letters, numbers, and special characters. Write a program that evaluates a password and determines if it is strong or weak based on these criteria.
+
 [View Solution](./solutions/22_password_strength_checker.py)
 
 ---
@@ -242,20 +265,32 @@ Create a **word-guessing Hangman game**.
 ### **2️⃣4️⃣ Simple Encryption (Caesar Cipher)** (8 Points)  
 
 Implement a **Caesar Cipher** for encoding and decoding messages.  
+
+**Explanation:**
+The Caesar Cipher is a basic encryption technique where each letter in the plaintext is shifted by a fixed number of positions in the alphabet. For example, with a shift of 3, "A" becomes "D", "B" becomes "E", and so on. Write a program to encode and decode messages using this method.
+
 [View Solution](./solutions/24_simple_encryption_caesar_cipher.py)
 
 ---
 
 ### **2️⃣5️⃣ Anagram Checker** (9 Points)  
 
-Check if **two words are anagrams**.  
+Check if **two words are anagrams**.
+
+**Explanation:**
+Two words are anagrams if they contain the same characters in the same frequency but in a different order. For example, "listen" and "silent" are anagrams. Write a program to check if two input words are anagrams.
+
 [View Solution](./solutions/25_anagram_checker.py)
 
 ---
 
 ### **2️⃣6️⃣ GCD Finder (Greatest Common Divisor)** (9 Points)  
 
-Find the **GCD** of two numbers using the **Euclidean algorithm**.  
+Find the **GCD** of two numbers using the **Euclidean algorithm**.
+
+**Explanation:**
+The GCD of two numbers is the largest number that divides both of them without leaving a remainder. The Euclidean algorithm repeatedly replaces the larger number with the remainder of dividing the larger number by the smaller number until the remainder is zero. The last non-zero remainder is the GCD.
+
 [View Solution](./solutions/26_gcd_finder.py)
 
 ---
@@ -269,7 +304,16 @@ Analyze a block of **text** and count word occurrences.
 
 ### **2️⃣8️⃣ Collatz Conjecture Simulator** (9 Points)  
 
-Simulate the **Collatz Conjecture** sequence.  
+Simulate the **Collatz Conjecture** sequence.
+
+**Explanation:**
+The Collatz Conjecture is a mathematical sequence defined as follows:
+
+1. Start with any positive integer n.
+2. If n is even, divide it by 2.
+3. If n is odd, multiply it by 3 and add 1.
+4. Repeat the process until n becomes 1.
+
 [View Solution](./solutions/28_collatz_conjecture.py)
 
 ---
@@ -277,11 +321,26 @@ Simulate the **Collatz Conjecture** sequence.
 ### **2️⃣9️⃣ Binary Search Algorithm** (10 Points)  
 
 Efficiently **search for a number** in a sorted list.  
+
+**Explanation:**
+Binary Search is an efficient algorithm for finding an item in a sorted list. It works by repeatedly dividing the search interval in half. If the target value is less than the middle element, narrow the interval to the lower half; otherwise, narrow it to the upper half. Repeat until the value is found or the interval is empty.
+
 [View Solution](./solutions/29_binary_search_algorithm.py)
 
 ---
 
 ### **3️⃣0️⃣ Conway’s Game of Life** (10 Points)  
 
-Simulate **Conway’s Game of Life**, a cellular automaton.  
+Simulate **Conway’s Game of Life**, a cellular automaton.
+
+**Explanation:**
+Conway’s Game of Life is a zero-player game where the evolution of a grid of cells is determined by its initial state and a set of rules:
+
+1. Any live cell with fewer than 2 live neighbors dies (underpopulation).
+2. Any live cell with 2 or 3 live neighbors survives.
+3. Any live cell with more than 3 live neighbors dies (overpopulation).
+4. Any dead cell with exactly 3 live neighbors becomes a live cell (reproduction).
+
+Write a program to simulate this game for a given initial grid.
+
 [View Solution](./solutions/30_conways_game_of_life.py)
